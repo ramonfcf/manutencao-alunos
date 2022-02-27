@@ -19,6 +19,7 @@ header {
 
 .cabecalho-titulo {
 	font-size: 2em;
+    font-weight: 600;
 	display:inline-block;
 }
 

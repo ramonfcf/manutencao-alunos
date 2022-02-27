@@ -8,10 +8,19 @@
 
 
 table {
-    border: solid 1px black;
-    
+    margin-top: 1em;
+    width: 100%;    
 }
 
 thead {
     background-color: lightblue;
+    border: 1px solid #ccc;
+
 }
+
+td, th {
+	padding: 1em;
+	border: 1px solid rgb(41, 40, 40);
+	text-align: center;
+}
+
