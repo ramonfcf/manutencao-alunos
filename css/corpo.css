@@ -1,0 +1,17 @@
+.tabela-container {
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+table {
+    border: solid 1px black;
+    
+}
+
+thead {
+    background-color: lightblue;
+}
