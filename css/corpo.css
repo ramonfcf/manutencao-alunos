@@ -6,10 +6,10 @@
     align-items: center;
 }
 
-
 table {
     margin-top: 1em;
     width: 100%;    
+    margin-bottom: 20px;
 }
 
 thead {
@@ -28,6 +28,67 @@ td, th {
     color: green;
 }
 
+
+input{
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.grupo {
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
 .vermelho {
     color: red;
+}
+
+.input-nome {
+    width: 30rem;
+    padding-left: 6px;
+}
+
+.input-sala {
+    width: 10rem;
+    padding-left: 6px;
+}
+
+.input-notas {
+    width: 8rem;
+    padding-left: 6px;
+}
+
+.input-container {
+    width: 60%;
+	height: 100%;
+    margin: auto;
+}
+
+.input-titulo {
+    font-size: 24px;
+    padding: 8px 0 8px 0;
+}
+
+.botao {
+    color: rgb(255, 255, 255);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 12px; 
+    padding: 9px; 
+    border-radius: 5px; 
+    font-weight: normal; 
+    text-decoration: none; 
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%); 
+    box-shadow: rgba(0, 0, 0, 0.34) 4px 1px 11px 0px; 
+    border: 2px solid rgb(28, 110, 164); 
+    display: inline-block;
+}
+
+.botao:hover {
+    background: #1C6EA4; 
+}
+
+.botao:active {
+    background: #144E75;
 }
