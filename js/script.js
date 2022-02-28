@@ -31,8 +31,10 @@ for(i = 0; i < alunos.length; i++ ){
 
     if (mediaNota < 6){
         alunoSituacao.textContent = "Reprovado";
+        alunoSituacao.classList.add('vermelho')
     } else {
         alunoSituacao.textContent = "Aprovado";
+        alunoSituacao.classList.add('verde')
     }
 }
 
