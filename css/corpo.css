@@ -54,7 +54,7 @@ input{
 }
 
 .input-notas {
-    width: 8rem;
+    width: 6rem;
     padding-left: 6px;
 }
 
@@ -91,4 +91,8 @@ input{
 
 .botao:active {
     background: #144E75;
+}
+
+#adiciona-aluno{
+    display: block;
 }
