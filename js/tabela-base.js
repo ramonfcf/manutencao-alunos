@@ -19,7 +19,18 @@ for(i = 0; i < alunos.length; i++){
 
     var alunoSituacao = aluno.querySelector('.aluno-situacao');
  
-    verificaSituacao(alunoSituacao, mediaNota);
+    if (validaMedia){
+        if (mediaNota >= 0 & mediaNota < 6){
+            alunoSituacao.textContent = "Reprovado";
+            alunoSituacao.classList.add('vermelho')
+    
+        } else if (mediaNota >= 6 & mediaNota <= 10){
+            alunoSituacao.textContent = "Aprovado";
+            alunoSituacao.classList.add('verde')   
+        } 
+    }   else {
+            variavel.textContent = 'Média Inválida';
+    }
 }
 
 function calculaMedia(n1, n2, n3, n4){      /*recebe as 4 notas do aluno*/
@@ -27,6 +38,20 @@ function calculaMedia(n1, n2, n3, n4){      /*recebe as 4 notas do aluno*/
     return media;
 }
 
+
+function validaMedia(media){
+    if(media >= 0 || media <= 10){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+
+
+
+/*
 function verificaSituacao(variavel, media){
     if (media >= 0 & media < 6){
         variavel.textContent = "Reprovado";
@@ -40,4 +65,4 @@ function verificaSituacao(variavel, media){
         variavel.textContent = 'Média Inválida';
     }
 }
-
+*/

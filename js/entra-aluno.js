@@ -8,8 +8,60 @@ botaoAdicionaAluno.addEventListener('click', function(){
 
     var aluno = adicionaAluno(form);
 
-    console.log(aluno.nome);
+    criaTr(aluno);
+
+    let tabela = document.querySelector(".tabela-alunos");
+})
+
+
+function adicionaAluno(form){
+
+    let aluno = {
+        nome: form.nome.value,
+        sala:  form.sala.value,
+        nota1: Number(form.nota1.value),
+        nota2: Number(form.nota2.value),
+        nota3: Number(form.nota3.value),
+        nota4: Number(form.nota4.value),
+        media: calculaMedia(Number(form.nota2.value),Number(form.nota2.value),Number(form.nota3.value),Number(form.nota4.value)),
+    }
+    return aluno;
+}
+
+
+function adicionaClasse (variavel, media) {
+    variavel.classList.add('aluno-situacao')
+
+    verificaSituacao(variavel, media);
+}
+
+function criaTr(aluno){
+    let tabela = document.querySelector(".tabela-alunos");
+    let alunoTr = document.createElement('tr');
     
+    tabela.appendChild(criaTd(aluno.nome, "aluno-nome"));
+    tabela.appendChild(criaTd(aluno.sala, "aluno-sala"));
+    tabela.appendChild(criaTd(aluno.nota1, "aluno-nota-1"));
+    tabela.appendChild(criaTd(aluno.nota2, "aluno-nota-2"));
+    tabela.appendChild(criaTd(aluno.nota3, "aluno-nota-3"));
+    tabela.appendChild(criaTd(aluno.nota4, "aluno-nota-4"));
+    tabela.appendChild(criaTd(aluno.media, "aluno-media"));
+    //tabela.appendChild(criaTd(verificaSituacao('', aluno.media), "aluno-situacao"));
+
+}
+
+function criaTd(dado, classe){
+    var td = document.createElement('td');
+    td.textContent = dado;
+    td.classList.add(classe);
+
+    return td;
+}
+
+
+
+    
+    /*
     let recebeNomeAluno = aluno.nome; 
     let recebeSalaAluno = aluno.sala
     let recebeNota1Aluno = aluno.nota1;
@@ -21,6 +73,8 @@ botaoAdicionaAluno.addEventListener('click', function(){
 
     let alunoTr = document.createElement('tr');
     
+
+
     let tdNome = document.createElement('td');
     let tdSala = document.createElement('td');
     let tdNota1 = document.createElement('td');
@@ -49,32 +103,4 @@ botaoAdicionaAluno.addEventListener('click', function(){
     alunoTr.appendChild(tdMedia);
     alunoTr.appendChild(tdSituacao);
 
-    let tabela = document.querySelector(".tabela-alunos");
-    tabela.appendChild(alunoTr);
-
-})
-
-
-function adicionaAluno(form){
-
-    let aluno = {
-        nome: form.nome.value,
-        sala:  form.sala.value,
-        nota1: Number(form.nota1.value),
-        nota2: Number(form.nota2.value),
-        nota3: Number(form.nota3.value),
-        nota4: Number(form.nota4.value),
-        media: calculaMedia(Number(form.nota2.value),Number(form.nota2.value),Number(form.nota3.value),Number(form.nota4.value))
-    }
-    return aluno;
-}
-
-var formAluno = document.querySelector('#form-aluno');
-
-
-function adicionaClasse (variavel, media) {
-    variavel.classList.add('aluno-situacao')
-
-    verificaSituacao(variavel, media);
-}
-
+    */
