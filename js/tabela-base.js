@@ -1,6 +1,6 @@
 var alunos = document.querySelectorAll(".aluno");
 
-for(i = 0; i < alunos.length; i++ ){
+for(i = 0; i < alunos.length; i++){
     let aluno = alunos[i];
     
     let alunoNota1 = aluno.querySelector('.aluno-nota-1');
@@ -18,7 +18,8 @@ for(i = 0; i < alunos.length; i++ ){
     alunoMedia.textContent = mediaNota
 
     var alunoSituacao = aluno.querySelector('.aluno-situacao');
-    validaNota(mediaNota);
+ 
+    verificaSituacao(alunoSituacao, mediaNota);
 }
 
 function calculaMedia(n1, n2, n3, n4){      /*recebe as 4 notas do aluno*/
@@ -26,16 +27,17 @@ function calculaMedia(n1, n2, n3, n4){      /*recebe as 4 notas do aluno*/
     return media;
 }
 
-function validaNota(media){
+function verificaSituacao(variavel, media){
     if (media >= 0 & media < 6){
-        alunoSituacao.textContent = "Reprovado";
-        alunoSituacao.classList.add('vermelho')
+        variavel.textContent = "Reprovado";
+        variavel.classList.add('vermelho')
 
     } else if (media >= 6 & media <= 10){
-        alunoSituacao.textContent = "Aprovado";
-        alunoSituacao.classList.add('verde')
+        variavel.textContent = "Aprovado";
+        variavel.classList.add('verde')
         
     } else {
-        alunoSituacao.textContent = 'Média Inválida';
+        variavel.textContent = 'Média Inválida';
     }
 }
+
