@@ -29,25 +29,35 @@ function adicionaAluno(form){
 }
 
 
-function adicionaClasse (variavel, media) {
-    variavel.classList.add('aluno-situacao')
-
-    verificaSituacao(variavel, media);
-}
-
 function criaTr(aluno){
     let tabela = document.querySelector(".tabela-alunos");
     let alunoTr = document.createElement('tr');
-    
-    tabela.appendChild(criaTd(aluno.nome, "aluno-nome"));
-    tabela.appendChild(criaTd(aluno.sala, "aluno-sala"));
-    tabela.appendChild(criaTd(aluno.nota1, "aluno-nota-1"));
-    tabela.appendChild(criaTd(aluno.nota2, "aluno-nota-2"));
-    tabela.appendChild(criaTd(aluno.nota3, "aluno-nota-3"));
-    tabela.appendChild(criaTd(aluno.nota4, "aluno-nota-4"));
-    tabela.appendChild(criaTd(aluno.media, "aluno-media"));
-    //tabela.appendChild(criaTd(verificaSituacao('', aluno.media), "aluno-situacao"));
+    tabela.appendChild(alunoTr);
 
+    alunoTr.appendChild(criaTd(aluno.nome, "aluno-nome"));
+    alunoTr.appendChild(criaTd(aluno.sala, "aluno-sala"));
+    alunoTr.appendChild(criaTd(aluno.nota1, "aluno-nota-1"));
+    alunoTr.appendChild(criaTd(aluno.nota2, "aluno-nota-2"));
+    alunoTr.appendChild(criaTd(aluno.nota3, "aluno-nota-3"));
+    alunoTr.appendChild(criaTd(aluno.nota4, "aluno-nota-4"));
+    alunoTr.appendChild(criaTd(aluno.media, "aluno-media"));
+    
+    var alunoSituacao = criaTd(aluno.media, "aluno-situacao");
+
+    if (validaMedia){
+        if (mediaNota >= 0 & mediaNota < 6){
+            alunoSituacao.textContent = "Reprovado";
+            alunoSituacao.classList.add('vermelho')
+    
+        } else if (mediaNota >= 6 & mediaNota <= 10){
+            alunoSituacao.textContent = "Aprovado";
+            alunoSituacao.classList.add('verde')   
+        } 
+    }   else {
+            variavel.textContent = 'Média Inválida';
+    }
+
+    alunoTr.appendChild(alunoSituacao);
 }
 
 function criaTd(dado, classe){
@@ -57,50 +67,3 @@ function criaTd(dado, classe){
 
     return td;
 }
-
-
-
-    
-    /*
-    let recebeNomeAluno = aluno.nome; 
-    let recebeSalaAluno = aluno.sala
-    let recebeNota1Aluno = aluno.nota1;
-    let recebeNota2Aluno = aluno.nota2;
-    let recebeNota3Aluno = aluno.nota3;
-    let recebeNota4Aluno = aluno.nota4;
-
-   // let situacaoAluno = verificaSituacao(mediaAluno);
-
-    let alunoTr = document.createElement('tr');
-    
-
-
-    let tdNome = document.createElement('td');
-    let tdSala = document.createElement('td');
-    let tdNota1 = document.createElement('td');
-    let tdNota2 = document.createElement('td');
-    let tdNota3 = document.createElement('td');
-    let tdNota4 = document.createElement('td');
-    let tdMedia = document.createElement('td');
-    let tdSituacao = document.createElement('td');
-    
-    adicionaClasse(tdSituacao, aluno.media);
-
-    tdNome.textContent = recebeNomeAluno;
-    tdSala.textContent = recebeSalaAluno;
-    tdNota1.textContent = recebeNota1Aluno;
-    tdNota2.textContent = recebeNota2Aluno;
-    tdNota3.textContent = recebeNota3Aluno;
-    tdNota4.textContent = recebeNota4Aluno;
-    tdMedia.textContent = aluno.media;
-
-    alunoTr.appendChild(tdNome);
-    alunoTr.appendChild(tdSala);
-    alunoTr.appendChild(tdNota1);
-    alunoTr.appendChild(tdNota2);
-    alunoTr.appendChild(tdNota3);
-    alunoTr.appendChild(tdNota4);
-    alunoTr.appendChild(tdMedia);
-    alunoTr.appendChild(tdSituacao);
-
-    */

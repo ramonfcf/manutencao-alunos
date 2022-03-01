@@ -46,23 +46,3 @@ function validaMedia(media){
         return false;
     }
 }
-
-
-
-
-
-/*
-function verificaSituacao(variavel, media){
-    if (media >= 0 & media < 6){
-        variavel.textContent = "Reprovado";
-        variavel.classList.add('vermelho')
-
-    } else if (media >= 6 & media <= 10){
-        variavel.textContent = "Aprovado";
-        variavel.classList.add('verde')
-        
-    } else {
-        variavel.textContent = 'Média Inválida';
-    }
-}
-*/
