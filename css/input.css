@@ -1,0 +1,53 @@
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.459);
+}
+
+.grupo {
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.input-nome {
+    width: 30rem;
+    padding-left: 6px;
+}
+
+.input-sala {
+    width: 10rem;
+    padding-left: 6px;
+}
+
+.input-notas {
+    width: 6rem;
+    padding-left: 6px;
+}
+
+.input-container {
+    width: 60%;
+	height: 100%;
+    margin: auto;
+}
+
+.input-titulo {
+    font-size: 24px;
+    padding: 8px 0 8px 0;
+}
+
+.botao:hover {
+    background: #1C6EA4; 
+}
+
+.botao:active {
+    background: #144E75;
+}
+
+#adiciona-aluno{
+    display: block;
+}
+
+#erros {
+    color: rgba(255, 255, 255, 0.973);
+    margin-bottom: 12px;
+    line-height: 20px;
+}

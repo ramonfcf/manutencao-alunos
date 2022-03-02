@@ -9,3 +9,32 @@ body {
     background: linear-gradient(to right,#195874, #0e4253, #02212e);
     color: #ffffff;
 }
+
+.vermelho {
+    color: rgba(255, 0, 0, 0.897);
+    font-weight: 600;
+}
+
+.verde {
+    color: green;
+    font-weight: 600;
+}
+
+
+.botao {
+    color: rgb(255, 255, 255);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px; 
+    padding: 11px 16px 11px 16px; 
+    border-radius: 5px; 
+    font-weight: normal; 
+    text-decoration: none; 
+    background-image: linear-gradient(to right, rgb(35, 84, 117) 0%, rgb(9, 74, 117) 50%); 
+    box-shadow: rgba(0, 0, 0, 0.377) 4px 1px 11px 0px; 
+    border: 2px solid rgb(38, 60, 73); 
+    display: inline-block;
+    margin-top: 12px;
+}
+

@@ -1,8 +1,9 @@
 header {
     width: 100%;
-    height: 80px;
+    height: 120px;
     background-color: #02212e96;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 1px rgba(16,15,15,0.17);
 }
 
 .cabecalho {
@@ -18,10 +19,18 @@ header {
 }
 
 .cabecalho-titulo {
+    width: 100%;
 	font-size: 2em;
     font-weight: 600;
 	display:inline-block;
+    padding: 20px 0 20px;
+    text-indent: 60px;
 }
+
+.logo {
+    background: url(../img/logo.svg) left center / 45px no-repeat;
+}
+
 
 /*
 font-family: 'League Spartan', sans-serif;

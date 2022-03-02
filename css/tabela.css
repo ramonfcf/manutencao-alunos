@@ -1,0 +1,38 @@
+.tabela-container {
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+table {
+    margin-top: 1em;
+    width: 100%;    
+    margin-bottom: 20px;
+    background-color: #0e4253;
+}
+
+thead {
+    background-color: #02212e96;
+    border: 1px solid #ccc;
+
+}
+
+td, th {
+	padding: .6em;
+	border: 1px solid rgb(129, 122, 122);
+	text-align: center;
+}
+
+
+
+input{
+    height: 40px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    background-color: #204258;
+    border-radius: 5px;
+    color: #ffffff;
+}
