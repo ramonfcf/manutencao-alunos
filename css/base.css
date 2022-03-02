@@ -6,4 +6,6 @@
 
 body {
     font-family: 'League Spartan', sans-serif;
+    background: linear-gradient(to right,#195874, #0e4253, #02212e);
+    color: #ffffff;
 }

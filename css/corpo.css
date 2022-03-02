@@ -10,28 +10,34 @@ table {
     margin-top: 1em;
     width: 100%;    
     margin-bottom: 20px;
+    background-color: #0e4253;
 }
 
 thead {
-    background-color: lightblue;
+    background-color: #02212e96;
     border: 1px solid #ccc;
 
 }
 
 td, th {
 	padding: .6em;
-	border: 1px solid rgb(41, 40, 40);
+	border: 1px solid rgb(129, 122, 122);
 	text-align: center;
 }
 
-.verde {
-    color: green;
-}
 
 
 input{
     height: 40px;
     margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    background-color: #204258;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.459);
 }
 
 .grupo {
@@ -41,12 +47,21 @@ input{
 
 .vermelho {
     color: red;
+    font-weight: 600;
 }
+
+.verde {
+    color: green;
+    font-weight: 600;
+}
+
 
 .input-nome {
     width: 30rem;
     padding-left: 6px;
 }
+
+
 
 .input-sala {
     width: 10rem;
@@ -79,10 +94,11 @@ input{
     border-radius: 5px; 
     font-weight: normal; 
     text-decoration: none; 
-    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%); 
+    background-image: linear-gradient(to right, rgb(45, 90, 119) 0%, rgb(22, 114, 175) 50%); 
     box-shadow: rgba(0, 0, 0, 0.34) 4px 1px 11px 0px; 
     border: 2px solid rgb(28, 110, 164); 
     display: inline-block;
+    margin-top: 12px;
 }
 
 .botao:hover {
@@ -98,9 +114,8 @@ input{
 }
 
 #erros {
-    color: red;
-    margin-bottom: 7px;
-    font-weight: 600;
+    color: rgba(255, 255, 255, 0.973);
+    margin-bottom: 12px;
     line-height: 20px;
 }
 
