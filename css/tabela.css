@@ -36,3 +36,14 @@ input{
     border-radius: 5px;
     color: #ffffff;
 }
+
+@media screen and (max-width:800px) {
+
+.tabela-container{
+    width: auto;
+}
+
+td, th {
+    padding: .1em;
+}
+}

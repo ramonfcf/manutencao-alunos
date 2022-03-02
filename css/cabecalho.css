@@ -7,7 +7,6 @@ header {
 }
 
 .cabecalho {
-    width: 100%;
 }
 
 .cabecalho-container { 
@@ -35,3 +34,20 @@ header {
 /*
 font-family: 'League Spartan', sans-serif;
 */
+
+@media screen and (max-width:800px) {
+
+.logo{
+    background: url('');
+}
+.cabecalho{
+    display: block;
+}
+
+.cabecalho-titulo{
+    padding: 0;
+    width: 100vw;
+    text-indent: 0px;
+    font-size: 1.6em;
+}
+}

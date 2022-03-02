@@ -3,6 +3,11 @@ input::placeholder{
     color: rgba(255, 255, 255, 0.459);
 }
 
+.input-container {
+    width: 60%;
+	height: 100%;
+    margin: auto;
+}
 .grupo {
     display: inline-block;
     padding-bottom: 6px;
@@ -23,11 +28,7 @@ input::placeholder{
     padding-left: 6px;
 }
 
-.input-container {
-    width: 60%;
-	height: 100%;
-    margin: auto;
-}
+
 
 .input-titulo {
     font-size: 24px;
@@ -50,4 +51,12 @@ input::placeholder{
     color: rgba(255, 255, 255, 0.973);
     margin-bottom: 12px;
     line-height: 20px;
+}
+
+@media screen and (max-width:800px) {
+.input-container{
+    width: auto;
+    margin-left: 3px;
+}
+
 }
