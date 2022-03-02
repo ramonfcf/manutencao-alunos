@@ -101,4 +101,11 @@ input{
     color: red;
     margin-bottom: 7px;
     font-weight: 600;
+    line-height: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

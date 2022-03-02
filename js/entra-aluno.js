@@ -45,7 +45,7 @@ function adicionaAlunoTabela(aluno){
     alunoTr.appendChild(criaTd(aluno.nota2, "aluno-nota-2"));
     alunoTr.appendChild(criaTd(aluno.nota3, "aluno-nota-3"));
     alunoTr.appendChild(criaTd(aluno.nota4, "aluno-nota-4"));
-    alunoTr.appendChild(criaTd(aluno.media, "aluno-media"));
+    alunoTr.appendChild(criaTd(aluno.media.toFixed(2), "aluno-media"));
     trSituacao(aluno, aluno.media, alunoTr)
  
 }
@@ -141,3 +141,5 @@ function verificaSala(aluno, variavelErro, ){
         variavelErro.push('Esta sala não existe')
     }
 }
+
+//lista alterações 1número de casas decimais limitar 2 campo de número aceitando letras 3 campo de texto aceitando números
