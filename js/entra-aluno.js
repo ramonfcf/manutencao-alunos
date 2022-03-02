@@ -33,7 +33,7 @@ function adicionaAluno(form){
     return aluno;
 }
 
-// recebe os dados do aluno e cria "tr" e "td" com os dados.
+// recebe os dados do aluno e cria "tr" e "td" com os dados, e adiciona na tabela.
 function adicionaAlunoTabela(aluno){                
     let tabela = document.querySelector(".tabela-alunos");
     let alunoTr = document.createElement('tr');
@@ -138,6 +138,6 @@ function verificaSala(aluno, variavelErro, ){
     let confereSala = salas.indexOf((aluno.sala.toUpperCase()));
 
     if (confereSala == -1){
-        variavelErro.push('Essa sala não existe')
+        variavelErro.push('Esta sala não existe')
     }
 }
