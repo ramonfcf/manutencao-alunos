@@ -58,5 +58,7 @@ input::placeholder{
     width: auto;
     margin-left: 3px;
 }
-
+.input-nome{
+    width: 20rem ;
+}
 }
