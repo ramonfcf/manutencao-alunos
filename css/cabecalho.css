@@ -30,11 +30,6 @@ header {
     background: url(../img/logo.svg) left center / 45px no-repeat;
 }
 
-
-/*
-font-family: 'League Spartan', sans-serif;
-*/
-
 @media screen and (max-width:800px) {
 
 .logo{
