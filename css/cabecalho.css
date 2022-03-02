@@ -6,9 +6,6 @@ header {
     text-shadow: 2px 2px 1px rgba(16,15,15,0.17);
 }
 
-.cabecalho {
-}
-
 .cabecalho-container { 
 	width: 60%;
 	height: 100%;
@@ -34,9 +31,6 @@ header {
 
 .logo{
     background: url('');
-}
-.cabecalho{
-    display: block;
 }
 
 .cabecalho-titulo{
