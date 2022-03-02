@@ -17,6 +17,8 @@ botaoAdicionaAluno.addEventListener('click', function(){
     ul.innerHTML = ""
 
     adicionaAlunoTabela(aluno);
+
+    form.reset();
 })
 
 // Recebe os dados do form e cria o objeto: aluno
