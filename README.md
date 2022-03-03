@@ -8,7 +8,7 @@
 
 ##### Programa desenvolvido para receber o nome do aluno, a sua classe e 4 notas. Com essas informações é realizado o cálculo da média e a situação do aluno. Se está aprovado ou reprovado.
 
-##### O programa conta com diversas validações para ajudar o usário informar os dados corretamente. Retorna erros na tela do usuário para informálo qual a maneira correta de preencher os campos.
+##### O programa conta com diversas validações para ajudar o usuário informar os dados corretamente. Retorna erros na tela do usuário para informá-lo qual a maneira correta de preencher os campos.
 
 ##### O campo nome não deixa entrar números. O campo números não deixa entrar letras.
 
