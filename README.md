@@ -12,7 +12,7 @@
 
 ##### O campo nome não deixa entrar números. O campo números não deixa entrar letras.
 
-##### o Campo classe só aceita as turmas cadastradas previamente.
+##### O Campo classe só aceita as turmas cadastradas previamente.
 
 ##### Com o click duplo do mouse, é possível remover os alunos da tabela.
 
